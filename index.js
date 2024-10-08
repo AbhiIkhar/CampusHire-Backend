@@ -22,6 +22,8 @@ credentials: true: This allows the backend to accept cookies and other credentia
 */
 const corsOptions = {
   origin: process.env.FRONTEND_URL,
+  methods: "GET, POST, PUT, DELETE, OPTIONS",
+  allowedHeaders: "Content-Type, Authorization",
   credentials: true,
 };
 
